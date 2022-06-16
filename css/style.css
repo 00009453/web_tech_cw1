@@ -1,0 +1,868 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* wrapper-nav */
+
+.wrapper-nav{
+    color: #ffffff;
+    background-color: #16ba6a;
+    font-family: 'Open Sans',sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    position: fixed;
+    box-shadow: 1px 23px 43px 13px rgba(26, 61, 178, 0.2);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+}
+
+
+.about_padding{
+    display: none;
+    width: 400px;
+    margin-left: 70px
+}
+.navigation-logo{
+    cursor: pointer;
+}
+.navigation-logo h1{
+    color: yellow;
+}
+.navigation-logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.navigation ul li{
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navigation ul li a:hover{
+    color: yellow;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+
+/* .wrapper-header */
+
+.wrapper-header{
+    width: 100%;
+    background-image: url(./../Images/bgMainPage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 220px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.header-left{
+    width: 45%;
+    padding-top: 50px;
+}
+.header-left img{
+    width: 100%;
+    height: 80%;
+}
+.header-right{
+    width: 45%;
+}
+
+.header-right h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: Roboto,sans-serif;
+}
+
+.header-right p{
+    font-size: 1.25rem;
+    margin: 33px 0 0;
+    color: #ffffff;   
+}
+
+.header-right button{
+    color: #ffffff;
+    background-color: #f1c50e;
+    font-weight: 700;
+    margin: 47px auto 0 0;
+    padding: 15px 59px 16px;
+    text-transform: uppercase;
+    border-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+/* patients */
+
+.wrapper-patients{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #16ba6a;
+    font-family: 'Open Sans',sans-serif;
+    padding: 70px 0;
+}
+.patients{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.patients-left{
+    width: 45%;
+}
+
+.patients-left h4{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-family: Roboto,sans-serif;
+    margin-bottom: 30px;
+}
+
+.patients-left h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: Roboto,sans-serif;
+    margin-bottom: 50px;
+}
+
+.patients-left h3{
+    font-weight: 700;
+    margin: 0 auto 0 0;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.patients-left img{
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.patients-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.patients-right__child{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.patients-right__child svg{
+    width: 2em;
+    height: 2em;
+    line-height: 0.9;
+    margin-right: 15px;
+}
+
+.patients-right__child svg path{
+    stroke: rgb(33, 150, 243);
+    fill: rgb(33, 150, 243);
+}
+
+.patients-right__child h3{
+    font-size: 1.875rem;
+    font-family: Roboto,sans-serif;
+    line-height: 1.6;
+}
+
+
+/* wrapper-dentists */
+.wrapper-dentists{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.dentists{
+    width: 65%;   
+}
+
+.dentists h6{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;   
+    font-family: Roboto,sans-serif;
+}
+.dentists h2{
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 20px auto 0 0;
+    line-height: 1.1;
+    color: #16ba6a;
+    font-family: Roboto,sans-serif;
+}
+.dentists p{
+    margin: 20px auto 0 0;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.dentists-cards{
+    font-family: 'Open Sans',sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.dentist-card{
+    padding: 30px 10px 50px 10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+.dentist-card i{
+    width: 64px;
+    height: 64px;
+    font-weight: bold;
+    background-color: #f1c50e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.dentist-card-child{
+    width: 80%;
+}
+
+.dentist-card-child h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    
+}
+
+.dentist-card__child p{
+    color: #111111;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* wrapper-questions */
+
+.wrapper-questions{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Open Sans',sans-serif;
+    padding-bottom: 70px;
+}
+
+.questions{
+    width: 65%;
+}
+
+.questions h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.questions h1{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #16ba6a;
+    margin: 20px 0 60px 0; 
+}
+.question-paragraph1, .question-paragraph2, .question-paragraph3{
+    display: none;
+}
+
+.show{
+    margin: 20px 0;
+    color: #111111;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    display: block;
+    width: 95%;
+}
+.title{
+    color: #16ba6a;
+}
+.questions-child{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions-child__left{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.questions-child__left h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.questions-child__right{
+    width: 50%;
+}
+.questions-child__right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* wrapper-cards */
+
+.wrapper-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+.cards{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    overflow: hidden;
+    width: 31%;
+    margin: 30px 0;
+}
+.card img{
+    width: 100%;
+    height: 222px;
+    object-fit: cover;
+}
+.card h4{
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    padding: 20px 40px;
+}
+.card p{
+    color: #111111;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 40px 10px 40px;
+}
+.card button{
+    font-weight: 700;
+    padding: 15px 50px;
+    color: #ffffff !important;
+    background-color: #f1c50e;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+
+/* wrapper-process */
+.wrapper-process{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto,sans-serif;
+    color: #ffffff;
+    background-color: #16ba6a;
+    padding: 50px 0;
+}
+.process{
+    width: 65%;
+    text-align: center;
+}
+.process h5{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+.process h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+.process p{
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.process-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.process-card{
+    width: 22%;
+}
+.process-card img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.process-card h6{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin: 30px 0 20px 0;
+}
+.process-card p{
+    width: 100%;
+}
+
+
+/* wrapper-booking */
+.wrapper-booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Roboto ,sans-serif;
+}
+.booking{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-child{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.booking-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.booking-child i{
+    width: 64px;
+    height: 64px;
+    background-color: #f1c50e;
+    border-radius: 50%;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-child h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 30px 0;
+}
+.booking-child a{
+    color: #000000;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000000;
+    text-decoration: none;
+}
+
+
+
+
+/* wrapper-pregnancy */
+.wrapper-pregnancy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto,sans-serif;
+    padding: 100px 120px;
+}
+
+.pregnancy{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pregnancy-left{
+    width: 50%;
+}
+.pregnancy-left img{
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.pregnancy-left h1{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #16ba6a;
+    width: 80%;
+    margin: 20px 0;
+}
+.pregnancy-left p{
+    font-size: 1rem;
+    line-height: 2;
+    color: #111111;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.pregnancy-left button{
+    color: #ffffff;
+    font-weight: 700;
+    padding: 15px 58px;
+    background-color: #f1c50e;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.pregnancy-right{
+    width: 50%;
+}
+
+.pregnancy-right__child{
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.pregnancy-right__child p{
+    color: #16ba6a;
+    font-weight: 700;
+}
+
+.pregnancy-right__child i{
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    background-color: #16ba6a;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* wrapper-contacts */
+.wrapper-contacts{
+    width: 100%;
+    padding: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./../Images/bgContact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts{
+    padding: 50px 100px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contacts h2{
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: 3rem;
+    color: #16ba6a;
+    margin-bottom: 15px;
+}
+.contacts h3{
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+/* Footer */
+.footer{
+    color: #ffffff;
+    background-color: #333333;
+    text-align: center;
+    padding: 40px 0;
+}
+.footer p a{
+    color: #b6d8f9;
+}
+
+
+
+button:hover{
+    background-color: #6d5d1c; 
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .navigation{
+        display: none;
+    }
+    .header, .patients, .dentists, .questions, .cards, .process, .booking, .pregnancy, .contacts{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .wrapper-header{
+        padding: 50px 0;
+        color: #000000;
+    }
+
+    .header-right h1, .header-right p{
+        color: #000000;
+    }
+
+    .header-left, .header-right{
+        width: 100%;
+    }
+
+    .patients-left{
+        width: 100%;
+    }
+
+    .patients-right{
+        width: 100%;
+    }
+
+    .dentists-cards{
+        flex-direction: column;
+    }
+    .dentist-card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .questions-child{
+        flex-direction: column;
+    }
+
+    .questions-child__left{
+        width: 100%;
+    }
+    .questions-child__right{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .process-cards{
+        flex-direction: column;
+    }
+
+    .process-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .booking-child{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .wrapper-booking{
+        padding: 20px 0;
+    }
+
+    .wrapper-pregnancy{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pregnancy-left{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .pregnancy-right{
+        width: 100%;
+    }
+
+    .wrapper-contacts{
+        padding: 50px;
+    }
+
+    .contacts{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 993px) {
+    .navigation{
+        display: none;
+    }
+    .header, .patients, .dentists, .questions, .cards, .process, .booking, .pregnancy, .contacts{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .wrapper-header{
+        padding: 50px 0;
+        color: #000000;
+    }
+
+    .header-right h1, .header-right p{
+        color: #000000;
+    }
+
+    .header-left, .header-right{
+        width: 100%;
+    }
+
+    .patients-left{
+        width: 100%;
+    }
+
+    .patients-right{
+        width: 100%;
+    }
+
+    .dentists-cards{
+        flex-direction: column;
+    }
+    .dentist-card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .questions-child{
+        flex-direction: column;
+    }
+
+    .questions-child__left{
+        width: 100%;
+    }
+    .questions-child__right{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .process-cards{
+        flex-direction: column;
+    }
+
+    .process-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .booking-child{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .wrapper-booking{
+        padding: 20px 0;
+    }
+
+    .wrapper-pregnancy{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pregnancy-left{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .pregnancy-right{
+        width: 100%;
+    }
+
+    .wrapper-contacts{
+        padding: 50px;
+    }
+
+    .contacts{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 994px) and (max-width: 1650px) {
+    .header, .patients, .dentists, .questions, .cards, .process, .booking, .pregnancy, .contacts{
+        width: 95%;
+    }
+}
